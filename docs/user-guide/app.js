@@ -46,7 +46,6 @@
 
   function init() {
     el('appTitle').textContent = DATA.title || 'RV Guide';
-    if (DATA.model) el('appModel').textContent = DATA.model;
     document.title = (DATA.title || 'RV Guide');
     if (DATA.walkthrough) WALK = { url: DATA.walkthrough };
     el('backBtn').addEventListener('click', () => { location.hash = ''; });

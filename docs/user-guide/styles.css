@@ -211,6 +211,10 @@ ul.warns li::before { content: "⚠️"; position: absolute; left: 12px; top: 10
   width: 44px; height: 44px; border-radius: 50%; font-size: 1.8rem; line-height: 1; cursor: pointer;
 }
 
+/* Cross-reference links */
+a.xref { color: var(--green); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a.xref:active { opacity: 0.6; }
+
 /* Quick Reference cheat sheet */
 .qr-group { margin: 0 2px 18px; }
 .qr-item {

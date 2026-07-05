@@ -1,5 +1,6 @@
 /* Service worker — offline caching for the RV Guide PWA */
-const VERSION = 'rvguide-v1';
+/* VERSION is auto-stamped by scripts/publish.js on each publish to bust the cache. */
+const VERSION = 'rvguide-202607052215';
 const CORE = [
   './',
   './index.html',

@@ -151,14 +151,14 @@
     html += `<div class="detail-hero"><span class="ic">${icon(s.icon)}</span>
       <div><div class="cat">${esc(s.category)}</div><h2>${esc(s.title)}</h2></div></div>`;
 
-    if (s.quick) html += `<div class="quick-callout">${esc(s.quick)}</div>`;
+    if (s.quick) html += `<div class="quick-callout">${richText(s.quick, s.id)}</div>`;
 
-    html += renderBody(s);
+    html += renderBody(s, s.id);
 
     // subsections
     (s.subsections || []).forEach((sub) => {
       html += `<div class="subhead">${esc(sub.title)}</div>`;
-      html += renderBody(sub);
+      html += renderBody(sub, s.id);
     });
 
     html += '</div>';
@@ -262,33 +262,33 @@
     return { time, label, seconds };
   }
 
-  // shared renderer for a section or subsection body
-  function renderBody(s) {
+  // shared renderer for a section or subsection body. cid = owning section id (for cross-links)
+  function renderBody(s, cid) {
     let html = '';
 
     if (s.steps && s.steps.length) {
       html += `<div class="block"><h3>Steps</h3><ol class="steps">`;
-      s.steps.forEach((t) => { html += `<li>${esc(t)}</li>`; });
+      s.steps.forEach((t) => { html += `<li>${richText(t, cid)}</li>`; });
       html += `</ol></div>`;
     }
 
     if (s.warnings && s.warnings.length) {
       html += `<div class="block"><h3>Important</h3><ul class="warns">`;
-      s.warnings.forEach((t) => { html += `<li>${esc(t)}</li>`; });
+      s.warnings.forEach((t) => { html += `<li>${richText(t, cid)}</li>`; });
       html += `</ul></div>`;
     }
 
     if (s.tips && s.tips.length) {
       html += `<div class="block"><h3>Tips</h3><ul class="tips">`;
-      s.tips.forEach((t) => { html += `<li>${linkify(t)}</li>`; });
+      s.tips.forEach((t) => { html += `<li>${richText(t, cid)}</li>`; });
       html += `</ul></div>`;
     }
 
-    // FAQ: question/answer pairs (both modes)
+    // FAQ: question/answer pairs
     if (s.faq && s.faq.length) {
       html += `<div class="block"><ul class="faq">`;
       s.faq.forEach((f) => {
-        html += `<li><p class="faq-q">${esc(f.q)}</p><p class="faq-a">${linkify(f.a)}</p></li>`;
+        html += `<li><p class="faq-q">${esc(f.q)}</p><p class="faq-a">${richText(f.a, cid)}</p></li>`;
       });
       html += `</ul></div>`;
     }
@@ -339,6 +339,45 @@
   }
   function linkify(s) {
     return esc(s).replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+  }
+
+  // ---- Cross-references: auto-link keywords to their card ----
+  // phrase (lowercase) -> section id. Longer phrases first so they win.
+  const XREF_MAP = {
+    'shore power': 'shore-power', 'shoreline': 'shore-power',
+    'water heater': 'water-heater', 'water pump': 'water',
+    'outdoor shower': 'outdoor-shower',
+    'sound bar': 'soundbar', 'soundbar': 'soundbar',
+    'roof a/c': 'roof-ac', 'dash a/c': 'dash-ac', 'air conditioner': 'roof-ac',
+    'black tank': 'dumping', 'gray tank': 'dumping', 'holding tank': 'dumping',
+    'refrigerator': 'fridge', 'fridge': 'fridge',
+    'microwave': 'microwave', 'cooktop': 'cooktop',
+    'awning': 'awning', 'propane': 'propane',
+    'inverter': 'battery-system', 'solar': 'battery-system',
+    'generator': 'generator', 'toilet': 'toilet', 'heater': 'heater',
+    'leveling': 'leveling'
+  };
+  const XREF_RE = (function () {
+    const phrases = Object.keys(XREF_MAP)
+      .sort((a, b) => b.length - a.length)
+      .map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    return new RegExp('(^|[^A-Za-z])(' + phrases.join('|') + ')(?![A-Za-z])', 'gi');
+  })();
+  // Turn the FIRST mention of each keyword into a link to its card (skip the current card).
+  function xref(escaped, currentId) {
+    const used = {};
+    return escaped.replace(XREF_RE, (full, pre, phrase) => {
+      const id = XREF_MAP[phrase.toLowerCase()];
+      if (!id || id === currentId || used[id]) return full;
+      used[id] = 1;
+      return `${pre}<a class="xref" href="#${id}">${phrase}</a>`;
+    });
+  }
+  // esc + cross-link keywords + linkify URLs
+  function richText(raw, currentId) {
+    let s = xref(esc(raw), currentId);
+    s = s.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+    return s;
   }
   function ytId(url) {
     const m = url.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);

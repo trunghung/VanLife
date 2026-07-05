@@ -100,11 +100,25 @@ ${cards}
 `;
 }
 
+// Stamp a fresh cache version into an app's service worker so deploys invalidate
+// the old cached app shell (otherwise returning visitors keep seeing the old version).
+function bumpServiceWorker(appDir, buildId) {
+  const swPath = path.join(appDir, 'sw.js');
+  if (!fs.existsSync(swPath)) return false;
+  let sw = fs.readFileSync(swPath, 'utf8');
+  const re = /(const VERSION = ')[^']*(';)/;
+  if (!re.test(sw)) return false;
+  sw = sw.replace(re, `$1rvguide-${buildId}$2`);
+  fs.writeFileSync(swPath, sw);
+  return true;
+}
+
 function main() {
   if (!fs.existsSync(REGISTRY)) { console.error('Missing apps.json'); process.exit(1); }
   const reg = JSON.parse(fs.readFileSync(REGISTRY, 'utf8'));
   const apps = reg.apps || [];
-  console.log(`Publishing ${apps.length} app(s) to /docs\n`);
+  const buildId = new Date().toISOString().replace(/[-:T]/g, '').slice(0, 12); // YYYYMMDDHHMM
+  console.log(`Publishing ${apps.length} app(s) to /docs  (build ${buildId})\n`);
 
   apps.forEach((a) => {
     const appDir = path.join(DOCS, a.slug);
@@ -117,13 +131,15 @@ function main() {
       if (fs.existsSync(buildPath)) {
         process.stdout.write(`  • ${a.slug}: building… `);
         execFileSync('node', [buildPath], { stdio: ['ignore', 'ignore', 'inherit'] });
-        console.log('done');
+        process.stdout.write('done');
       } else {
         console.warn(`  ! ${a.slug}: build script ${a.build} not found — skipping`);
       }
     } else {
-      console.log(`  • ${a.slug}: static (no build step)`);
+      process.stdout.write(`  • ${a.slug}: static (no build step)`);
     }
+    if (bumpServiceWorker(appDir, buildId)) process.stdout.write('  [sw cache bumped]');
+    console.log('');
   });
 
   const html = landingHTML(reg.site || { title: 'Apps' }, apps);

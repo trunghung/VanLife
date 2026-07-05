@@ -4,6 +4,9 @@ node_modules/
 # vite build output (site ships from /docs, not /dist)
 dist/
 
+# vite config temp files
+vite.config.*.timestamp-*.mjs
+
 # logs & os cruft
 npm-debug.log*
 .DS_Store

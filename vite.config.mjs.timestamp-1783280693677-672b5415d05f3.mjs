@@ -1,0 +1,36 @@
+// vite.config.mjs
+import { defineConfig } from "file:///sessions/great-serene-dirac/mnt/VanLife/node_modules/vite/dist/node/index.js";
+var vite_config_default = defineConfig({
+  root: "docs",
+  // serve the published folder
+  base: "/VanLife/",
+  // same subpath GitHub Pages uses (repo name)
+  publicDir: false,
+  // no separate public dir; everything is already static
+  appType: "mpa",
+  // multi-page: landing page + /user-guide/ each have index.html
+  server: {
+    port: 5173,
+    open: "/VanLife/"
+    // open the landing page on start
+  },
+  preview: {
+    port: 4173,
+    open: "/VanLife/"
+  },
+  build: {
+    // Not normally needed (the site ships as-is), but supported.
+    outDir: "../dist",
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        landing: "docs/index.html",
+        guide: "docs/user-guide/index.html"
+      }
+    }
+  }
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcubWpzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyJjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZGlybmFtZSA9IFwiL3Nlc3Npb25zL2dyZWF0LXNlcmVuZS1kaXJhYy9tbnQvVmFuTGlmZVwiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiL3Nlc3Npb25zL2dyZWF0LXNlcmVuZS1kaXJhYy9tbnQvVmFuTGlmZS92aXRlLmNvbmZpZy5tanNcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfaW1wb3J0X21ldGFfdXJsID0gXCJmaWxlOi8vL3Nlc3Npb25zL2dyZWF0LXNlcmVuZS1kaXJhYy9tbnQvVmFuTGlmZS92aXRlLmNvbmZpZy5tanNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJztcblxuLy8gVGhlIHNpdGUgaXMgYSBoYW5kLWF1dGhvcmVkLCBuby1idWlsZCBzdGF0aWMgUFdBIHRoYXQgbGl2ZXMgaW4gL2RvY3Ncbi8vIChHaXRIdWIgUGFnZXMgc2VydmVzIHRoYXQgZm9sZGVyKS4gVml0ZSBpcyB1c2VkIGhlcmUgb25seSBhcyBhIGZhc3QgbG9jYWxcbi8vIGRldi9wcmV2aWV3IHNlcnZlci4gV2UgbWlycm9yIHRoZSBHaXRIdWIgUGFnZXMgc3VicGF0aCBzbyBsb2NhbCBVUkxzIG1hdGNoXG4vLyBwcm9kdWN0aW9uIGV4YWN0bHk6ICBodHRwOi8vbG9jYWxob3N0OjUxNzMvVmFuTGlmZS9cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIHJvb3Q6ICdkb2NzJywgICAgICAgICAgICAvLyBzZXJ2ZSB0aGUgcHVibGlzaGVkIGZvbGRlclxuICBiYXNlOiAnL1ZhbkxpZmUvJywgICAgICAgLy8gc2FtZSBzdWJwYXRoIEdpdEh1YiBQYWdlcyB1c2VzIChyZXBvIG5hbWUpXG4gIHB1YmxpY0RpcjogZmFsc2UsICAgICAgICAvLyBubyBzZXBhcmF0ZSBwdWJsaWMgZGlyOyBldmVyeXRoaW5nIGlzIGFscmVhZHkgc3RhdGljXG4gIGFwcFR5cGU6ICdtcGEnLCAgICAgICAgICAvLyBtdWx0aS1wYWdlOiBsYW5kaW5nIHBhZ2UgKyAvdXNlci1ndWlkZS8gZWFjaCBoYXZlIGluZGV4Lmh0bWxcbiAgc2VydmVyOiB7XG4gICAgcG9ydDogNTE3MyxcbiAgICBvcGVuOiAnL1ZhbkxpZmUvJywgICAgIC8vIG9wZW4gdGhlIGxhbmRpbmcgcGFnZSBvbiBzdGFydFxuICB9LFxuICBwcmV2aWV3OiB7XG4gICAgcG9ydDogNDE3MyxcbiAgICBvcGVuOiAnL1ZhbkxpZmUvJyxcbiAgfSxcbiAgYnVpbGQ6IHtcbiAgICAvLyBOb3Qgbm9ybWFsbHkgbmVlZGVkICh0aGUgc2l0ZSBzaGlwcyBhcy1pcyksIGJ1dCBzdXBwb3J0ZWQuXG4gICAgb3V0RGlyOiAnLi4vZGlzdCcsXG4gICAgZW1wdHlPdXREaXI6IHRydWUsXG4gICAgcm9sbHVwT3B0aW9uczoge1xuICAgICAgaW5wdXQ6IHtcbiAgICAgICAgbGFuZGluZzogJ2RvY3MvaW5kZXguaHRtbCcsXG4gICAgICAgIGd1aWRlOiAnZG9jcy91c2VyLWd1aWRlL2luZGV4Lmh0bWwnLFxuICAgICAgfSxcbiAgICB9LFxuICB9LFxufSk7XG4iXSwKICAibWFwcGluZ3MiOiAiO0FBQTRTLFNBQVMsb0JBQW9CO0FBTXpVLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQzFCLE1BQU07QUFBQTtBQUFBLEVBQ04sTUFBTTtBQUFBO0FBQUEsRUFDTixXQUFXO0FBQUE7QUFBQSxFQUNYLFNBQVM7QUFBQTtBQUFBLEVBQ1QsUUFBUTtBQUFBLElBQ04sTUFBTTtBQUFBLElBQ04sTUFBTTtBQUFBO0FBQUEsRUFDUjtBQUFBLEVBQ0EsU0FBUztBQUFBLElBQ1AsTUFBTTtBQUFBLElBQ04sTUFBTTtBQUFBLEVBQ1I7QUFBQSxFQUNBLE9BQU87QUFBQTtBQUFBLElBRUwsUUFBUTtBQUFBLElBQ1IsYUFBYTtBQUFBLElBQ2IsZUFBZTtBQUFBLE1BQ2IsT0FBTztBQUFBLFFBQ0wsU0FBUztBQUFBLFFBQ1QsT0FBTztBQUFBLE1BQ1Q7QUFBQSxJQUNGO0FBQUEsRUFDRjtBQUNGLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==

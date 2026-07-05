@@ -67,10 +67,13 @@ This guide lives at `docs/user-guide/`. GitHub Pages serves the `docs/` folder a
 | `manifest.json`, `sw.js`, `icons/` | PWA install + offline caching |
 | `photos/` | Drop your real van photos here |
 
-## Notes on the 59K power system
-The Travato **59K (59KL)** is the **Pure3 lithium** model: a large lithium battery + 3600W
-inverter + solar + a second under-hood alternator, and **no factory Onan generator** (the
-lithium system replaces it — you can run the A/C and microwave off the inverter for a while).
-A full **Generator (Onan) + reset** section is included anyway per the owner's request —
-review/keep/remove it in `guide-content.md`, and confirm the exact generator model printed on
-the unit's label if your van has one added.
+## Notes on this van's power system
+- **House battery:** AGM (not lithium).
+- **Onan generator** underneath the van makes the 120V power for the A/C, microwave, and all
+  the regular outlets.
+- **Inverter** powers only a few things: the **TV**, the **sound bar**, and the **one outlet
+  inside the cabinet above the TV**. Everything else needs the generator, shore power, or the
+  vehicle engine running.
+- **Controls location:** the inverter switch, OnePlace monitor panel, and Volta/system panels
+  are all **above the sliding door**.
+- Confirm the exact Onan model on the unit's label and update the Generator section if needed.

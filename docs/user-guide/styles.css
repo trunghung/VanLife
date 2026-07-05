@@ -87,6 +87,10 @@ body {
   font-size: 0.92rem; color: var(--ink);
 }
 
+/* Featured intro video */
+.intro-video { margin: 0 2px 18px; }
+.intro-video-label { font-weight: 700; color: var(--green-dark); margin: 0 0 8px; font-size: 0.95rem; }
+
 /* Category groups */
 .cat-group { margin-bottom: 20px; }
 .cat-title {
@@ -167,19 +171,70 @@ ul.tips li::before { content: "💡"; position: absolute; left: 12px; top: 10px;
 ul.warns li { background: var(--warn-bg); border: 1px solid var(--warn-border); color: var(--warn-ink); }
 ul.warns li::before { content: "⚠️"; position: absolute; left: 12px; top: 10px; }
 
-/* Photos */
-.photos { display: grid; grid-template-columns: 1fr; gap: 12px; }
-@media (min-width: 520px) { .photos { grid-template-columns: 1fr 1fr; } }
-.photo { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
-.photo img { width: 100%; display: block; }
-.photo .cap { padding: 8px 12px; font-size: 0.86rem; color: var(--muted); }
-.photo.placeholder .ph-box {
-  aspect-ratio: 4/3; display: grid; place-items: center; text-align: center;
-  background: repeating-linear-gradient(45deg, #f7f4ee, #f7f4ee 12px, #f1ede4 12px, #f1ede4 24px);
-  color: var(--muted); padding: 16px;
+/* Photo thumbnails (tap to enlarge) */
+.thumbs { display: flex; flex-wrap: wrap; gap: 10px; }
+.thumb {
+  width: 108px; padding: 0; border: 1px solid var(--line); background: #fff;
+  border-radius: 12px; overflow: hidden; cursor: pointer; text-align: left;
+  display: flex; flex-direction: column;
 }
-.photo.placeholder .ph-box .cam { font-size: 1.8rem; display: block; margin-bottom: 6px; }
-.photo.placeholder .ph-box .fn { font-size: 0.72rem; opacity: 0.7; margin-top: 6px; word-break: break-all; }
+.thumb:active { transform: scale(0.97); }
+.thumb img { width: 108px; height: 82px; object-fit: cover; display: block; }
+.thumb .thumb-ph {
+  width: 108px; height: 82px; display: grid; place-items: center;
+  background: repeating-linear-gradient(45deg, #f7f4ee, #f7f4ee 10px, #f1ede4 10px, #f1ede4 20px);
+}
+.thumb .thumb-ph .cam { font-size: 1.5rem; }
+.thumb .thumb-cap {
+  padding: 5px 7px; font-size: 0.72rem; color: var(--muted); line-height: 1.25;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* Full-size photo modal */
+.img-modal {
+  position: fixed; inset: 0; z-index: 40; background: rgba(0,0,0,0.9);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.img-modal .modal-inner { max-width: 96vw; max-height: 92vh; text-align: center; }
+.img-modal .modal-media img { max-width: 96vw; max-height: 80vh; border-radius: 8px; display: block; margin: 0 auto; }
+.img-modal .modal-ph {
+  width: 80vw; max-width: 460px; aspect-ratio: 4/3; border-radius: 12px;
+  background: repeating-linear-gradient(45deg, #efece5, #efece5 14px, #e6e2d8 14px, #e6e2d8 28px);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: #6b7770;
+}
+.img-modal .modal-ph .cam { font-size: 2.4rem; }
+.img-modal .modal-ph .fn { font-size: 0.78rem; opacity: 0.75; word-break: break-all; padding: 0 20px; }
+.img-modal .modal-cap { color: #fff; font-size: 0.95rem; margin-top: 14px; max-width: 700px; }
+.modal-close {
+  position: absolute; top: 14px; right: 16px; z-index: 41;
+  background: rgba(255,255,255,0.15); color: #fff; border: none;
+  width: 44px; height: 44px; border-radius: 50%; font-size: 1.8rem; line-height: 1; cursor: pointer;
+}
+
+/* Quick Reference cheat sheet */
+.qr-group { margin: 0 2px 18px; }
+.qr-item {
+  display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;
+  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  padding: 10px 12px; margin-bottom: 8px;
+}
+.qr-item .qr-ic { flex: 0 0 auto; width: 38px; height: 38px; border-radius: 10px; background: var(--tip-bg); color: var(--green); display: grid; place-items: center; }
+.qr-item .qr-ic svg { width: 22px; height: 22px; }
+.qr-item .qr-title { display: block; font-weight: 700; font-size: 0.98rem; }
+.qr-item .qr-quick { display: block; font-size: 0.86rem; color: var(--muted); }
+
+/* FAQ */
+ul.faq { list-style: none; padding: 0; margin: 0; }
+ul.faq li { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; }
+ul.faq .faq-q { font-weight: 700; margin: 0 0 5px; color: var(--green-dark); }
+ul.faq .faq-a { margin: 0; font-size: 0.95rem; }
+
+/* Watch-in-video jump link */
+.watch-link {
+  display: inline-block; background: var(--tip-bg); color: var(--green-dark);
+  border: 1px solid var(--line); border-radius: 12px; padding: 11px 14px;
+  font-weight: 600; font-size: 0.95rem; text-decoration: none;
+}
 
 /* Video */
 .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }

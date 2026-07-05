@@ -1,0 +1,15 @@
+{
+  "name": "vanlife",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web apps for our 2022 Winnebago Travato 59K, served via GitHub Pages (/docs).",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "vite build",
+    "content": "node docs/user-guide/scripts/build.js"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

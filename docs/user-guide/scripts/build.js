@@ -84,10 +84,15 @@ function parse(md) {
     m = line.match(/^\*\*Video:\*\*\s*(.*)$/);
     if (m) { target.video = m[1].trim(); block = null; continue; }
 
+    // Watch: jump into the main walkthrough video at a timestamp, e.g. "12:34 | label"
+    m = line.match(/^\*\*Watch:\*\*\s*(.*)$/);
+    if (m) { target.watch = m[1].trim(); block = null; continue; }
+
     if (/^\*\*Steps:\*\*/.test(line))    { startBlock(target, 'steps'); continue; }
     if (/^\*\*Tips:\*\*/.test(line))     { startBlock(target, 'tips'); continue; }
     if (/^\*\*Warnings:\*\*/.test(line)) { startBlock(target, 'warnings'); continue; }
     if (/^\*\*Photos:\*\*/.test(line))   { startBlock(target, 'photos'); continue; }
+    if (/^\*\*FAQ:\*\*/.test(line))      { startBlock(target, 'faq'); continue; }
 
     // List items
     m = line.match(/^\s*\d+\.\s+(.+)$/);   // numbered
@@ -106,6 +111,7 @@ function parse(md) {
       const arr = target[block];
       const last = arr[arr.length - 1];
       if (block === 'photos') { last.caption = (last.caption + ' ' + line.trim()).trim(); }
+      else if (block === 'faq') { last.a = (last.a + ' ' + line.trim()).trim(); }
       else { arr[arr.length - 1] = last + ' ' + line.trim(); }
     }
   }
@@ -116,6 +122,9 @@ function addItem(target, block, text) {
   if (block === 'photos') {
     const parts = text.split('|');
     target.photos.push({ src: parts[0].trim(), caption: (parts[1] || '').trim() });
+  } else if (block === 'faq') {
+    const parts = text.split('::');
+    target.faq.push({ q: parts[0].trim(), a: (parts[1] || '').trim() });
   } else {
     target[block].push(text);
   }

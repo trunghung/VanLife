@@ -1,0 +1,9 @@
+# dependencies
+node_modules/
+
+# vite build output (site ships from /docs, not /dist)
+dist/
+
+# logs & os cruft
+npm-debug.log*
+.DS_Store

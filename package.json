@@ -7,7 +7,8 @@
     "dev": "vite",
     "preview": "vite preview",
     "build": "vite build",
-    "content": "node docs/user-guide/scripts/build.js"
+    "content": "node docs/user-guide/scripts/build.js",
+    "publish": "node scripts/publish.js"
   },
   "devDependencies": {
     "vite": "^5.4.0"

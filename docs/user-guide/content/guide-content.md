@@ -38,9 +38,8 @@
 ==================================================================
 -->
 
-# Our Travato 59K — Borrower's Guide
+# Borrower's Guide - Our 2022 Winnebago Travato 59K
 > tagline: Everything you need to enjoy the van. Tap any card for step-by-step instructions with photos — or open Quick Reference for the one-screen cheat sheet.
-> model: 2022 Winnebago Travato 59K (AGM house battery • Onan generator)
 > walkthrough: https://www.youtube.com/watch?v=bQeor0aaGv8
 
 ## [Start Here] Welcome {#welcome} {icon:home}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2f5d50" />
+  <title>Travato 59K — Borrower's Guide</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="RV Guide" />
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <button id="backBtn" class="icon-btn hidden" aria-label="Back">&#8592;</button>
+      <div class="header-title">
+        <h1 id="appTitle">RV Guide</h1>
+        <p id="appModel" class="model-line"></p>
+      </div>
+      <button id="installBtn" class="install-btn hidden" aria-label="Install app">Install</button>
+    </div>
+    <div class="mode-bar" id="modeBar">
+      <span class="mode-label">Mode:</span>
+      <div class="segmented" role="tablist" aria-label="Detail level">
+        <button id="modeQuick" class="seg active" role="tab">Quick Reference</button>
+        <button id="modeBeginner" class="seg" role="tab">Beginner</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="view" class="view">
+    <div id="loading" class="loading">Loading guide…</div>
+  </main>
+
+  <footer class="app-footer" id="appFooter">
+    <span id="offlineDot" class="offline-dot" title="Offline-ready"></span>
+    <span id="footerText">Works offline once loaded</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

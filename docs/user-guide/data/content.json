@@ -1,0 +1,544 @@
+{
+  "title": "Our Travato 59K — Borrower's Guide",
+  "tagline": "Everything you need to enjoy the van. Two modes: Quick Reference for a refresher, or Beginner for step-by-step with pictures.",
+  "model": "2022 Winnebago Travato 59K (59KL — Pure3 lithium system)",
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "Welcome & Orientation",
+      "category": "Start Here",
+      "icon": "home",
+      "quick": "Thanks for borrowing our van! Skim these cards before you go. Tap any card for full steps and photos. Toggle \"Quick\" vs \"Beginner\" at the top. Call us anytime — number is in Emergency & Contacts.",
+      "steps": [
+        "Do a walk-around outside: check tires look inflated, nothing left under the van, all exterior doors/compartments latched.",
+        "Inside, find the OnePlace monitor panel — this shows battery charge, water tank, and waste tank levels.",
+        "Locate the fire extinguisher, first-aid kit, and the two exits (side door and cab doors).",
+        "Confirm the fridge is on and cold before loading food.",
+        "Read the \"Dos & Don'ts\" card once — it prevents 90% of problems."
+      ],
+      "tips": [
+        "When in doubt, take a photo of a switch/valve position BEFORE you change it, so you can put it back.",
+        "The full Winnebago manual and helpful walk-through videos are in the Resources card."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [],
+      "subsections": []
+    },
+    {
+      "id": "power-inverter",
+      "title": "Power System & Inverter",
+      "category": "Power",
+      "icon": "bolt",
+      "quick": "The van runs on a big lithium battery (Pure3). The INVERTER turns that battery into regular household (120V) power for outlets. Turn the inverter ON at its wall control panel to use outlets when not plugged in. Turn it OFF when not needed to save battery. Watch the State-of-Charge (SOC) gauge — don't let it run to empty.",
+      "steps": [
+        "Find the inverter control panel — a small wall-mounted monitor near the OnePlace panel.",
+        "Press the power button to turn the inverter ON. Household outlets now work off the battery.",
+        "Check the Pure3 State-of-Charge (SOC) gauge. Think of it like a fuel gauge for your electricity.",
+        "Turn the inverter OFF at the panel when you're done using outlets — leaving it on slowly drains the battery.",
+        "If an outlet suddenly has no power, the inverter's GFCI may have tripped: press the RESET button on the inverter/GFCI outlet, then try again."
+      ],
+      "tips": [
+        "The battery recharges three ways: (1) driving — the engine's second alternator charges it, (2) plugging into shore power, (3) rooftop solar on sunny days.",
+        "High-draw items (A/C, microwave, hair dryer) drain the battery fast. See their cards for what to run them on.",
+        "If the SOC gets low, the easiest fix is to drive for 30–60 minutes or plug into shore power."
+      ],
+      "warnings": [
+        "Don't store anything against the inverter unit — it needs airflow to stay cool."
+      ],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/inverter-panel.jpg",
+          "caption": "The inverter wall control panel — press to turn ON/OFF"
+        },
+        {
+          "src": "photos/soc-gauge.jpg",
+          "caption": "Pure3 State-of-Charge (battery fuel gauge)"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "generator",
+      "title": "Generator (Onan) — Operation & RESET",
+      "category": "Power",
+      "icon": "generator",
+      "quick": "IF our van has the under-floor Onan generator: it makes 120V power to run the A/C and microwave without shore power. Start/stop it from the interior generator switch. If it trips or won't start, use the RESET steps below. NOTE FROM OWNER: confirm this section applies to our rig — the 59K's lithium system can also run A/C/microwave off the inverter.",
+      "steps": [
+        "Before starting: turn OFF big 120V loads (A/C, microwave) so the generator starts under light load.",
+        "Find the generator START/STOP switch (interior, near the monitor panel). Press and HOLD toward START until the generator fires, then release. It may crank a few seconds.",
+        "Let it warm up ~1–2 minutes before switching on the A/C or microwave.",
+        "To stop: turn off A/C/microwave first, then hold the switch toward STOP."
+      ],
+      "tips": [
+        "The generator itself is in a compartment underneath the van. Never run it while sleeping without working CO detectors, and never in an enclosed space.",
+        "Keep at least 1/4 tank of fuel — the generator shares the van's gas tank and will stop to protect the engine's fuel supply."
+      ],
+      "warnings": [
+        "Generator exhaust contains carbon monoxide, which is deadly. Keep windows/doors on the exhaust side closed and make sure the CO detector is working."
+      ],
+      "video": "",
+      "photos": [],
+      "subsections": [
+        {
+          "title": "RESET the Onan generator (won't start, or tripped off)",
+          "steps": [
+            "Turn OFF all 120V loads inside (A/C, microwave, chargers).",
+            "Go to the generator unit underneath the van (exterior access panel/compartment).",
+            "On the generator's own face/control area, find the CIRCUIT BREAKER / RESET button (a push-button, often red or black, sometimes labeled \"RESET\" or a rocker breaker).",
+            "If it's popped out/tripped, press it firmly IN to reset it.",
+            "At the generator (or interior switch), press and HOLD the STOP side of the switch for about 3–5 seconds to clear any fault, then release.",
+            "Now press and HOLD the START/PRIME side until the generator starts, then release once it's running smoothly.",
+            "If it still won't start, check: fuel level (need ~1/4 tank), and look for a blinking fault light on the generator — count the blinks and match to the Onan operator card in the InfoCase."
+          ],
+          "tips": [],
+          "warnings": [
+            "If the generator repeatedly trips or won't start after one reset attempt, STOP and call the owner. Do not force it."
+          ],
+          "photos": [
+            {
+              "src": "photos/generator-location.jpg",
+              "caption": "Generator compartment underneath the van"
+            },
+            {
+              "src": "photos/generator-reset.jpg",
+              "caption": "The reset/breaker button on the generator unit"
+            },
+            {
+              "src": "photos/generator-switch.jpg",
+              "caption": "Interior START/STOP switch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shore-power",
+      "title": "Shore Power (Plugging In)",
+      "category": "Power",
+      "icon": "plug",
+      "quick": "\"Shore power\" means plugging the van into a campground outlet (30-amp). This runs everything AND recharges the battery. The cord (\"shoreline\") is stored underneath the wardrobe. Turn the campground breaker OFF before plugging/unplugging.",
+      "steps": [
+        "Get the power cord (shoreline) from its storage spot (under the wardrobe area).",
+        "At the campground pedestal, switch the breaker OFF.",
+        "Plug the cord into the van's sidewall inlet (driver side) and the other end into the 30-amp pedestal outlet.",
+        "Switch the pedestal breaker back ON.",
+        "You now have full power, and the battery is charging automatically."
+      ],
+      "tips": [
+        "Use a 30-amp outlet. If only a household (15/20-amp) outlet is available, you'll need the correct adapter and you can't run the A/C and microwave at the same time."
+      ],
+      "warnings": [
+        "Never use an extension cord for the shoreline — wrong-sized cords can overheat and cause a fire.",
+        "Make sure all prongs are fully seated and dry before switching power on."
+      ],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/shore-inlet.jpg",
+          "caption": "The 30-amp power inlet on the driver-side wall"
+        },
+        {
+          "src": "photos/shore-cord.jpg",
+          "caption": "Shoreline cord storage location"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "battery",
+      "title": "House Battery & Charging",
+      "category": "Power",
+      "icon": "battery",
+      "quick": "The Pure3 lithium battery powers everything. Recharge by driving (30–60 min), plugging into shore power, or letting solar work on sunny days. Check the SOC gauge like a fuel gauge. Don't run it to zero.",
+      "steps": [
+        "Check the SOC (State of Charge) gauge on the interior cabinet — it's your battery fuel gauge.",
+        "To recharge fastest: plug into shore power, or drive the van for 30–60 minutes.",
+        "On sunny days, the rooftop solar tops it off slowly — the Pure3 system must be ON for solar to charge."
+      ],
+      "tips": [
+        "Turning the inverter OFF when you don't need outlets makes the battery last much longer.",
+        "The fridge, lights, water pump, and fans all sip from this battery even when parked."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [],
+      "subsections": []
+    },
+    {
+      "id": "water",
+      "title": "Fresh Water & Water Pump",
+      "category": "Water",
+      "icon": "water",
+      "quick": "Water comes from the onboard fresh tank (turn the WATER PUMP switch ON to get pressure at the faucets) or from a city hose hookup. The pump switch is on the monitor panel and the Water Center panel — an indicator light shows when it's on.",
+      "steps": [
+        "To use tank water: turn the WATER PUMP switch ON (on the monitor panel or Water Center panel). Water flows when you open a faucet.",
+        "Open a faucet briefly — you'll hear the pump run to build pressure, then it quiets when pressurized.",
+        "If using a campground water spigot instead, connect a drinking-water hose to the city water inlet — then you don't need the pump.",
+        "Check the fresh water level on the OnePlace monitor panel."
+      ],
+      "tips": [
+        "Turn the pump OFF when you leave the van, so a drip or open valve can't drain the tank or flood.",
+        "Conserve water when boondocking: shorter showers, turn off while soaping."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/water-pump-switch.jpg",
+          "caption": "Water pump switch (green light = on)"
+        },
+        {
+          "src": "photos/water-center-panel.jpg",
+          "caption": "The Water Center panel"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "water-heater",
+      "title": "Water Heater",
+      "category": "Water",
+      "icon": "flame",
+      "quick": "Gives you hot water. Make sure the water heater is FILLED with water before turning it on (never run it dry). Turn it on, wait ~20–30 min for hot water. Turn it off when you don't need hot water to save energy.",
+      "steps": [
+        "Make sure the water system is pressurized (pump on or city water connected) and the water heater is filled — open a hot faucet until water flows steadily, then close it.",
+        "Confirm the Water Center panel is NOT in \"bypass/winterize\" (the red lever should be in the normal, not bypass, position).",
+        "Turn the water heater ON.",
+        "Wait about 20–30 minutes for the water to heat.",
+        "Turn it OFF when you're done to conserve power/propane."
+      ],
+      "tips": [],
+      "warnings": [
+        "NEVER turn on the water heater when it's empty (in bypass or winterized mode) — it can be damaged."
+      ],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/water-heater-control.jpg",
+          "caption": "Water heater on/off control"
+        },
+        {
+          "src": "photos/red-bypass-lever.jpg",
+          "caption": "Red bypass lever — normal (not bypass) position for use"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "toilet",
+      "title": "Toilet & Black Tank (Bowl Liner Trick)",
+      "category": "Water",
+      "icon": "toilet",
+      "quick": "Flush with the foot/hand pedal — a little water first, then flush. OUR TRICK: use a biodegradable bowl liner for solids so we fill the black tank much slower and dump less often. Only RV-safe toilet paper. Nothing else goes in.",
+      "steps": [
+        "For a normal flush: hold the flush lever/pedal — add a little water to the bowl first, do your business, then flush fully so waste clears into the black tank.",
+        "OWNER'S BOWL-LINER TRICK (to save black tank space when boondocking): before use, drop a biodegradable RV toilet bowl liner bag into the bowl. After solids-only use, seal the bag and dispose in the trash instead of flushing — this keeps the black tank from filling quickly.",
+        "Add a little water and a scoop/pod of holding-tank treatment after dumping to control odor."
+      ],
+      "tips": [
+        "Keep a small stock of RV-safe toilet paper and bowl liners in the bathroom cabinet.",
+        "Liquids-only flushing between liner uses keeps things fresh without filling the tank."
+      ],
+      "warnings": [
+        "Do NOT flush regular facial/household tissue, wipes (even \"flushable\"), sanitary products, or any non-dissolving items — they clog the tank.",
+        "Do NOT pour bleach or harsh chemicals in the toilet — they damage the seals."
+      ],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/toilet.jpg",
+          "caption": "The toilet and flush pedal"
+        },
+        {
+          "src": "photos/bowl-liner.jpg",
+          "caption": "Biodegradable bowl liner in place"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "dumping",
+      "title": "Gray/Black Tanks & Dumping",
+      "category": "Water",
+      "icon": "drop",
+      "quick": "When tanks are full (check the monitor panel), dump at a dump station. Connect the sewer hose, empty BLACK first, then GRAY (gray rinses the hose). Never leave valves open while parked. Wear the gloves in the wet-bay.",
+      "steps": [
+        "Check tank levels on the OnePlace monitor panel before dumping.",
+        "Put on the disposable gloves. Remove the sewer hose from its storage compartment.",
+        "Remove the cap from the sewage drain outlet and firmly attach the sewer hose. Put the other end securely into the dump station opening.",
+        "Open the BLACK tank valve first with a quick pull. Let it fully drain, then close it.",
+        "Open the GRAY tank valve next (this rinses black residue from the hose). Close it when empty.",
+        "Rinse/flush if a rinse connection is available, store the hose, add tank treatment through the toilet."
+      ],
+      "tips": [
+        "Dump before travel days when possible — you don't want to haul the extra weight.",
+        "Rule of thumb: BLACK before GRAY, never both at once."
+      ],
+      "warnings": [
+        "Never open the gray valve before the black is drained and closed, or you'll back sewage into the gray side."
+      ],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/wet-bay.jpg",
+          "caption": "Sewer hose storage and dump valves"
+        },
+        {
+          "src": "photos/dump-valves.jpg",
+          "caption": "Black (left) and gray valve pulls"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "fridge",
+      "title": "Refrigerator",
+      "category": "Appliances",
+      "icon": "fridge",
+      "quick": "The fridge runs automatically on 12V/120V power. Turn it on and set the dial around 3–4. Give it a few hours to cool before loading lots of food. Leave it on the whole trip.",
+      "steps": [
+        "Turn the fridge power ON and set the thermostat to about 3–4 (midrange).",
+        "Let it cool for 3–4 hours (or overnight) before fully loading with food.",
+        "To turn off (end of trip), set the thermostat to zero/off and prop the door open to prevent mold."
+      ],
+      "tips": [
+        "Pre-chill food before loading; the fridge cools better when it's not cooling warm items.",
+        "Keep the door closed on hot days; open it as little as possible."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [],
+      "subsections": []
+    },
+    {
+      "id": "ac-heat",
+      "title": "Roof A/C & Heat",
+      "category": "Appliances",
+      "icon": "snowflake",
+      "quick": "The roof A/C cools the cabin. It's a BIG power user — run it on shore power, the generator, or while driving (engine), OR briefly off the lithium/inverter. Select Low Cool / High Cool / Auto and set the temperature. There's also a Bluetooth app to control it.",
+      "steps": [
+        "Make sure you have enough power: shore power or generator is best; the engine (while driving) also works; the lithium/inverter can run it for a limited time.",
+        "Press the selector to \"Low Cool\", \"High Cool\", or \"Auto\".",
+        "Set the temperature to comfortable. The A/C cycles on/off to hold the temperature.",
+        "Aim the louvers where you want airflow."
+      ],
+      "tips": [
+        "On cooler nights (below ~75°F), set the temp to the midpoint, not the coldest — running it too cold can ice up the coil and stop cooling.",
+        "If it ices up and airflow drops, run the fan on High until the ice clears.",
+        "The A/C can be controlled from a phone via its Bluetooth app (see Resources)."
+      ],
+      "warnings": [
+        "Running the A/C off battery alone drains the lithium bank quickly — keep an eye on the SOC gauge."
+      ],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/ac-thermostat.jpg",
+          "caption": "Roof A/C control / thermostat"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "microwave",
+      "title": "Microwave",
+      "category": "Appliances",
+      "icon": "microwave",
+      "quick": "The microwave needs 120V power: run it on shore power, the generator, or the inverter (engine while driving also works). Don't run it and the A/C at the same time on a small (15/20-amp) hookup.",
+      "steps": [
+        "Confirm you have 120V power: shore power, generator on, or inverter ON (or engine running while driving).",
+        "Use it like a normal microwave.",
+        "If it won't power on, the inverter is probably off — turn the inverter ON, or start the generator / plug in."
+      ],
+      "tips": [],
+      "warnings": [
+        "On a small household (15/20-amp) hookup, don't run the microwave and A/C together — it will trip the breaker."
+      ],
+      "video": "",
+      "photos": [],
+      "subsections": []
+    },
+    {
+      "id": "soundbar",
+      "title": "Sound Bar & Bluetooth",
+      "category": "Entertainment",
+      "icon": "speaker",
+      "quick": "Pair your phone to the sound bar over Bluetooth to play music. Turn the sound bar on, set it to Bluetooth/pairing mode, then connect from your phone's Bluetooth settings.",
+      "steps": [
+        "Turn the sound bar ON (needs 12V/inverter power — turn the inverter on if it's dead).",
+        "Press the source/input button until it shows Bluetooth (BT) / pairing mode (usually a blinking light).",
+        "On your phone, open Bluetooth settings and select the sound bar from the list.",
+        "Once connected, play audio from your phone — it comes out the sound bar."
+      ],
+      "tips": [
+        "If it won't pair, turn the sound bar off and on, and \"forget\" any old device on your phone, then retry."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/soundbar.jpg",
+          "caption": "Sound bar and its power/source buttons"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "tv",
+      "title": "TV",
+      "category": "Entertainment",
+      "icon": "tv",
+      "quick": "Turn on the TV with its remote. It needs 120V power (inverter on, or shore/generator). Use the source/input button to switch between the antenna, HDMI, or streaming device.",
+      "steps": [
+        "Make sure the inverter is ON (or you're on shore power/generator).",
+        "Turn on the TV with the remote.",
+        "Press SOURCE/INPUT to pick: over-the-air Antenna, or HDMI (streaming stick / game console).",
+        "For local channels, make sure the TV antenna is raised/on, then run a channel scan in the TV menu."
+      ],
+      "tips": [
+        "Cell/Wi-Fi streaming works best; over-the-air antenna reception depends on where you're parked."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/tv.jpg",
+          "caption": "TV and remote"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "leveling",
+      "title": "Leveling & Parking",
+      "category": "Driving",
+      "icon": "level",
+      "quick": "Park on the flattest spot you can find. Use the leveling blocks under the tires for small slopes (drive up onto them). Set the parking brake, chock a wheel if on any incline. A level van means the fridge works well and you sleep better.",
+      "steps": [
+        "Pick the flattest available spot. Check level using the bubble level (or a phone level app) inside.",
+        "For minor slopes, place the leveling blocks in front of/behind the low-side tires and slowly drive onto them.",
+        "Set the parking brake firmly.",
+        "On any slope, place a wheel chock for extra safety."
+      ],
+      "tips": [
+        "Level side-to-side matters most for sleeping comfort and the fridge."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [],
+      "subsections": []
+    },
+    {
+      "id": "driving",
+      "title": "Driving Basics",
+      "category": "Driving",
+      "icon": "steering",
+      "quick": "It drives like a tall van. Watch your HEIGHT (about 9'4\" — mind low clearances, drive-throughs, garages, tree branches). Use the mirrors and back-up camera. Take corners wide. Before moving: everything stowed, steps/antenna in, cords disconnected.",
+      "steps": [
+        "PRE-DRIVE CHECK: inside items stowed, roof vents/antenna down, TV antenna down, steps in, windows closed, fridge latched.",
+        "OUTSIDE: shore cord unplugged and stored, water hose disconnected, all compartment doors latched, nothing left behind.",
+        "Adjust mirrors and seat. Note the height (~9'4\") for clearances.",
+        "Drive smoothly — it's taller and heavier than a car, so brake earlier and take turns wide."
+      ],
+      "tips": [],
+      "warnings": [
+        "Low clearances are the #1 rental RV damage. When unsure of a clearance, DON'T risk it — find another route."
+      ],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/predrive-checklist.jpg",
+          "caption": "Pre-drive walk-around checklist"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "propane",
+      "title": "Propane & Stove",
+      "category": "Safety",
+      "icon": "propane",
+      "quick": "Propane powers the stove (and furnace). Turn the propane valve on to cook, off when done and when driving/refueling. If you ever smell gas: no flames, no switches — open windows, turn off propane, and get everyone out.",
+      "steps": [
+        "To cook: make sure the propane supply valve is ON, light the burner per the stove instructions.",
+        "Turn burners OFF and the propane supply OFF when finished.",
+        "Turn propane OFF while driving and always at gas stations."
+      ],
+      "tips": [],
+      "warnings": [
+        "If you smell propane (rotten-egg smell): do NOT touch light switches or create sparks. Open windows/doors, shut off the propane, exit the van, and don't return until it's clear.",
+        "Keep the CO/propane detector powered — never disable it."
+      ],
+      "video": "",
+      "photos": [],
+      "subsections": []
+    },
+    {
+      "id": "dos-donts",
+      "title": "Dos & Don'ts",
+      "category": "Help",
+      "icon": "checklist",
+      "quick": "A quick cheat sheet of the things that keep the van happy.",
+      "steps": [],
+      "tips": [
+        "DO turn the inverter and water pump OFF when you leave the van.",
+        "DO keep an eye on the battery SOC and tank levels on the monitor panel.",
+        "DO use only RV-safe toilet paper and the bowl liners.",
+        "DO dump black before gray, and dump before big travel days.",
+        "DON'T flush wipes, tissue, or anything besides RV paper.",
+        "DON'T run the water heater dry (empty).",
+        "DON'T run A/C + microwave together on a small hookup.",
+        "DON'T forget the height (~9'4\") — watch clearances.",
+        "DON'T leave the propane on while driving or refueling."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [],
+      "subsections": []
+    },
+    {
+      "id": "emergency",
+      "title": "Emergency & Contacts",
+      "category": "Help",
+      "icon": "phone",
+      "quick": "Save the owner's number in your phone before you leave. For roadside issues use the roadside assistance number. In a real emergency call 911. Breaker/reset locations are listed below.",
+      "steps": [
+        "OWNER (call/text anytime): __________  (fill in)",
+        "Roadside assistance / insurance: __________  (fill in policy #)",
+        "If a 120V outlet is dead: check the inverter GFCI reset, then the house 120V breakers.",
+        "If the generator won't run: see the Generator RESET card.",
+        "If nothing electrical works: check the main house breaker and the battery SOC (may just need charging — drive or plug in)."
+      ],
+      "tips": [
+        "House 120V circuit breakers and fuses are in the load center (interior panel) — labeled inside the door.",
+        "Take a photo and text the owner rather than guessing on anything you're unsure about."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [],
+      "subsections": []
+    },
+    {
+      "id": "resources",
+      "title": "Videos, Manual & Apps",
+      "category": "Resources",
+      "icon": "book",
+      "quick": "Video walk-throughs and the full manual for deeper questions.",
+      "steps": [
+        "Watch the walk-through videos below for a visual tour.",
+        "The full Winnebago Travato 59KL operator manual PDF is in the van's InfoCase and linked in this app.",
+        "Appliance apps: the roof A/C has a Bluetooth control app (search the app store); more at HowToTravato.com."
+      ],
+      "tips": [
+        "Second walk-through video: https://www.youtube.com/watch?v=wqOGHFiEtAI&t=57s",
+        "More official how-tos: HowToTravato.com"
+      ],
+      "warnings": [],
+      "video": "https://www.youtube.com/watch?v=LbPsOfe-MyU&t=379",
+      "photos": [],
+      "subsections": []
+    }
+  ]
+}

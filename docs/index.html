@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2f5d50" />
+  <title>VanLife — Our RV</title>
+  <link rel="icon" href="./user-guide/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./user-guide/icons/icon-192.png" />
+  <style>
+    :root{
+      --green:#2f5d50; --green-dark:#234a3f; --sand:#f4efe6; --ink:#22312c;
+      --muted:#6b7770; --line:#e4e0d6; --accent:#d98324;
+      --radius:16px; --shadow:0 2px 10px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+    html,body{margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:var(--sand);color:var(--ink);line-height:1.5;min-height:100vh}
+    header{background:var(--green);color:#fff;padding:calc(28px + env(safe-area-inset-top)) 20px 26px;
+      box-shadow:0 2px 8px rgba(0,0,0,.15)}
+    .head-inner{max-width:820px;margin:0 auto;display:flex;align-items:center;gap:16px}
+    .logo{width:58px;height:58px;border-radius:16px;flex:0 0 auto}
+    header h1{margin:0;font-size:1.5rem}
+    header p{margin:4px 0 0;opacity:.88;font-size:.95rem}
+    main{max-width:820px;margin:0 auto;padding:20px 16px 40px}
+    .section-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+      font-weight:700;margin:6px 4px 10px}
+    .apps{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:620px){.apps{grid-template-columns:1fr 1fr}}
+    a.app-card{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;
+      background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;
+      box-shadow:var(--shadow);transition:transform .08s ease}
+    a.app-card:active{transform:scale(.985)}
+    .app-card .ic{width:52px;height:52px;border-radius:13px;background:#eef5f1;color:var(--green);
+      display:grid;place-items:center;flex:0 0 auto}
+    .app-card .ic svg{width:28px;height:28px}
+    .app-card .t{font-weight:700;font-size:1.08rem;margin:0 0 2px}
+    .app-card .d{font-size:.9rem;color:var(--muted);margin:0}
+    .app-card .chev{margin-left:auto;color:var(--muted);font-size:1.4rem}
+    footer{max-width:820px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font-size:.82rem;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="head-inner">
+      <img class="logo" src="./user-guide/icons/icon-192.png" alt="" />
+      <div>
+        <h1>VanLife</h1>
+        <p>Guides &amp; tools for our 2022 Winnebago Travato 59K</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="section-label">Apps</div>
+    <div class="apps">
+      <a class="app-card" href="./user-guide/">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M19 3v16"/></svg></span>
+        <span>
+          <p class="t">Borrower's Guide</p>
+          <p class="d">How to operate the van — for friends &amp; family. Installable, works offline.</p>
+        </span>
+        <span class="chev">›</span>
+      </a>
+    </div>
+  </main>
+  <footer>More tools coming soon.</footer>
+</body>
+</html>

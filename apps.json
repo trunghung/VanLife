@@ -6,8 +6,8 @@
   "apps": [
     {
       "slug": "user-guide",
-      "title": "Borrower's Guide",
-      "description": "How to operate the van — for friends & family. Installable, works offline.",
+      "title": "How to Use Our Van",
+      "description": "Welcome to our van — how everything works. Installable, works offline.",
       "build": "scripts/build.js",
       "icon": "user-guide/icons/icon-192.png"
     }

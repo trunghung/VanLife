@@ -93,6 +93,8 @@ function parse(md) {
     if (/^\*\*Warnings:\*\*/.test(line)) { startBlock(target, 'warnings'); continue; }
     if (/^\*\*Photos:\*\*/.test(line))   { startBlock(target, 'photos'); continue; }
     if (/^\*\*FAQ:\*\*/.test(line))      { startBlock(target, 'faq'); continue; }
+    if (/^\*\*Items:\*\*/.test(line))    { startBlock(target, 'items'); continue; }
+    if (/^\*\*Panels:\*\*/.test(line))   { startBlock(target, 'panels'); continue; }
 
     // List items
     m = line.match(/^\s*\d+\.\s+(.+)$/);   // numbered
@@ -112,6 +114,7 @@ function parse(md) {
       const last = arr[arr.length - 1];
       if (block === 'photos') { last.caption = (last.caption + ' ' + line.trim()).trim(); }
       else if (block === 'faq') { last.a = (last.a + ' ' + line.trim()).trim(); }
+      else if (block === 'panels') { last.desc = (last.desc + ' ' + line.trim()).trim(); }
       else { arr[arr.length - 1] = last + ' ' + line.trim(); }
     }
   }
@@ -125,6 +128,9 @@ function addItem(target, block, text) {
   } else if (block === 'faq') {
     const parts = text.split('::');
     target.faq.push({ q: parts[0].trim(), a: (parts[1] || '').trim() });
+  } else if (block === 'panels') {
+    const parts = text.split('|');
+    target.panels.push({ src: parts[0].trim(), name: (parts[1] || '').trim(), desc: (parts[2] || '').trim() });
   } else {
     target[block].push(text);
   }

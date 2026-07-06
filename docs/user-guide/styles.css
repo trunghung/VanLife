@@ -88,8 +88,14 @@ body {
 }
 
 /* Featured intro video */
-.intro-video { margin: 0 2px 18px; }
+.intro-video { margin: 6px 2px 8px; }
 .intro-video-label { font-weight: 700; color: var(--green-dark); margin: 0 0 8px; font-size: 0.95rem; }
+.video-jump {
+  display: block; width: 100%; text-align: left; cursor: pointer;
+  background: var(--green); color: #fff; border: none; border-radius: 14px;
+  padding: 13px 16px; font-size: 1rem; font-weight: 700; margin: 0 2px 14px;
+}
+.video-jump:active { opacity: 0.9; }
 
 /* Category groups */
 .cat-group { margin-bottom: 20px; }
@@ -118,7 +124,8 @@ body {
 .card .c-body { min-width: 0; }
 .card .c-title { font-weight: 700; font-size: 1.02rem; margin: 2px 0 3px; }
 .card .c-quick { font-size: 0.9rem; color: var(--muted); margin: 0;
-  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+  white-space: normal; text-overflow: ellipsis; }
 .card .chev { margin-left: auto; color: var(--muted); font-size: 1.3rem; align-self: center; }
 
 /* Detail */
@@ -210,6 +217,33 @@ ul.warns li::before { content: "⚠️"; position: absolute; left: 12px; top: 10
   background: rgba(255,255,255,0.15); color: #fff; border: none;
   width: 44px; height: 44px; border-radius: 50%; font-size: 1.8rem; line-height: 1; cursor: pointer;
 }
+
+/* Detail bottom nav (jump to Quick Reference / Home) */
+.detail-nav { display: flex; gap: 10px; margin: 22px 2px 6px; border-top: 1px solid var(--line); padding-top: 16px; }
+.nav-link {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
+  text-decoration: none; color: var(--green-dark); font-weight: 600; font-size: 0.92rem;
+  background: var(--tip-bg); border: 1px solid var(--line); border-radius: 12px; padding: 12px 10px;
+}
+.nav-link .nav-ic svg { width: 18px; height: 18px; vertical-align: -3px; }
+
+/* Panels list — photo used as the row icon */
+ul.panels { list-style: none; padding: 0; margin: 0; }
+.panel-item { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin-bottom: 8px; }
+.panel-thumb { width: 72px; height: 72px; flex: 0 0 auto; border-radius: 10px; }
+.panel-thumb img { width: 72px; height: 72px; object-fit: cover; }
+.panel-thumb .thumb-ph { width: 72px; height: 72px; }
+.panel-text { min-width: 0; }
+.panel-name { font-weight: 700; margin: 2px 0 4px; color: var(--green-dark); }
+.panel-desc { margin: 0; font-size: 0.92rem; }
+
+/* Supplies / gear list */
+ul.items { list-style: none; padding: 0; margin: 0; }
+ul.items li {
+  padding: 11px 12px 11px 38px; position: relative; background: #fff;
+  border: 1px solid var(--line); border-radius: 12px; margin-bottom: 8px; font-size: 0.98rem;
+}
+ul.items li::before { content: "✓"; position: absolute; left: 13px; top: 10px; color: var(--green); font-weight: 700; }
 
 /* Cross-reference links */
 a.xref { color: var(--green); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }

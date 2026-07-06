@@ -38,12 +38,12 @@
 ==================================================================
 -->
 
-# Borrower's Guide - Our 2022 Winnebago Travato 59K
+# Welcome to Our Van - 2022 Winnebago Travato 59K
 > tagline: Everything you need to enjoy the van. Tap any card for step-by-step instructions with photos — or open Quick Reference for the one-screen cheat sheet.
 > walkthrough: https://www.youtube.com/watch?v=bQeor0aaGv8
 
 ## [Start Here] Welcome {#welcome} {icon:home}
-**Quick:** Thanks for borrowing our van! Skim these cards before you go. Tap any card for full steps and photos, or open the Quick Reference card for a one-screen cheat sheet. Call us anytime — the number is in the Emergency card.
+**Quick:** Welcome to our van — here's how everything works! Skim these cards before you head out. Tap any card for full steps and photos, or open the Quick Reference card for a one-screen cheat sheet. Call us anytime — the number is in the Emergency card.
 **Steps:**
 1. Do a walk-around outside: check tires look inflated, nothing left under the van, all exterior doors/compartments latched.
 2. Inside, find the OnePlace monitor panel — this shows battery charge, water tank, and waste tank levels.
@@ -55,17 +55,94 @@
 - The full Winnebago manual and helpful walk-through videos are in the Resources card.
 
 ## [Start Here] Controls Location {#control-location} {icon:location}
-**Quick:** ALL the main power controls are in ONE place — ABOVE THE SLIDING DOOR. That panel area has the INVERTER switch, the OnePlace monitor panel (battery charge + water/waste tank levels), and the system (Volta) panels. Whenever a card says "turn on the inverter" or "check the panel," this is where you go.
+**Quick:** ALL the main power controls are in ONE place — ABOVE THE SLIDING DOOR. That panel area has the INVERTER switch, the OnePlace monitor panel (battery charge + water/waste tank levels), and the Power Control System panel. Whenever a card says "turn on the inverter" or "check the panel," this is where you go.
 **Steps:**
 1. Look at the wall/ceiling area directly ABOVE THE SLIDING (side entry) DOOR.
 2. Find the INVERTER switch here — this powers the TV, sound bar, and the outlet in the cabinet above the TV.
 3. Find the OnePlace monitor panel here — shows house battery charge and fresh/gray/black tank levels.
-4. The Volta / system monitor panels are here too.
+4. The Power Control System panel (LCD with SELECT / SCROLL buttons) is here too.
 5. Start here anytime you need power controls or a status check.
 **Tips:**
 - This is the "mission control" of the van — if in doubt, look above the sliding door first.
+- Each panel has its own how-to card in the Panels section: OnePlace, Power Control System, and the Truma heater (the Water Center is behind the passenger rear door).
 **Photos:**
-- photos/control-location.jpg | Control area above the sliding door (inverter switch, OnePlace + Volta panels)
+- photos/control-location.jpg | Control area above the sliding door (inverter switch, OnePlace + Power Control System panels)
+
+## [Trip] Before You Go {#before-trip} {icon:checklist}
+**Quick:** A quick prep checklist before you head out so you leave with full water and propane, empty waste tanks, and a cold fridge.
+**Steps:**
+1. Fill the fresh water tank (Water Center → "Power Fill Tank," then back to "Dry Camping").
+2. Check tank status on the OnePlace panel: fresh water FULL, and the gray and black tanks EMPTY (dump them before travel days).
+3. Check/fill the propane tank so you have enough for cooking and heat (top it off at a propane fill station).
+4. Turn the fridge on and set it to ~3–4 the night before so it's cold; pre-chill food before loading (it cools better when it's not cooling warm items).
+5. Load food, drinks, and supplies (see Supplies & Gear).
+6. Charge the house battery — drive or plug into shore power so you start full.
+7. Do the pre-drive walk-around (see Driving): roof vents and antenna down, steps in, everything stowed, cords and hoses disconnected, all compartments latched.
+8. Confirm the L.P. (propane) valve is OFF for driving and the cooktop is off.
+**Tips:**
+- Keep the InfoCase (manuals, serial numbers) in the van — you're most likely to need it on the road.
+
+## [Trip] After Your Trip {#after-trip} {icon:home}
+**Quick:** How to shut the van down when you're back so it stays fresh and ready for next time.
+**Steps:**
+1. Dump and rinse the tanks — black first, then gray — and add tank treatment.
+2. Turn the fridge OFF and prop the door open so it doesn't get moldy.
+3. Turn OFF the water pump, the inverter, the water heater, and the L.P. (propane) valve.
+4. Take out all food and trash; wipe down the counters and sink.
+5. Unplug shore power and stow the cord; drain and stow the water hoses.
+6. Sweep out and crack a roof vent so it airs out in storage.
+**Tips:**
+- Leaving the fridge door propped and a vent cracked is the trick to no mold or musty smell.
+**Warnings:**
+- If it will be below freezing in storage, drain the water system or winterize it so the pipes don't burst.
+
+## [Panels] OnePlace Monitor {#oneplace} {icon:battery}
+**Quick:** The van's status panel, above the sliding door. Press a button to read tank levels or battery, run the water pump, start/stop the generator, or turn the water heater on.
+**Steps:**
+1. LEVELS → press "Tank" to see fresh / gray / black on the screen (shown as 1/3, 2/3, Full — there's usually a little more than it reads). Press "Battery" for the house + chassis charge.
+2. WATER → "Pump" turns the water pump on/off. "Heater Electric" runs the water heater on 120V (shore/generator); "Heater L.P." runs it on propane.
+3. GENSET → press and hold "Start" to start the generator, "Stop" to stop it. "Meter" shows generator info (hours, etc.).
+**Tips:**
+- Tank gauges read low on purpose — "Full" means full, but 2/3 usually has more left than it shows.
+- The water pump switch is also on the Water Center panel.
+**Photos:**
+- photos/oneplace-panel.jpg | OnePlace monitor — GenSet, Water, and Levels buttons
+
+## [Panels] Power Control System {#power-control} {icon:bolt}
+**Quick:** An automatic power-load manager. It spreads the van's electrical load so running several things at once doesn't trip the breaker. You normally don't touch it.
+**Steps:**
+1. Leave it on / automatic — it works by itself on shore power (15 / 20 / 30-amp) or the generator.
+2. To view readings, press SCROLL to cycle through them and SELECT to choose one.
+3. If an appliance briefly pauses while several are running, that's the PCS balancing the load — normal, nothing to fix.
+**Tips:**
+- If a breaker still trips, run fewer big things at once — A/C plus microwave together is the usual culprit on a small hookup.
+**Photos:**
+- photos/power-control-panel.jpg | Power Control System — green LCD with SELECT / SCROLL
+
+## [Panels] Water Center (Nautilus) {#nautilus} {icon:water}
+**Quick:** The plumbing control panel, behind the passenger rear door. Labeled levers set how water flows; it also has the water pump switch, the Eco-hot valve, and the exterior light switch.
+**Steps:**
+1. Set the LEVERS to match the picture labels on the panel: "Dry Camping" for normal onboard-tank use, "City Water" when hooked to a spigot, "Power Fill Tank" to fill the fresh tank, "Winterize" for storage.
+2. To FILL the fresh tank: attach a drinking-water hose to the Tank Fill Inlet, set the levers to "Power Fill Tank," fill it (don't walk away), then set back to "Dry Camping."
+3. The Water Pump switch (top right) turns the pump on/off.
+4. Eco-hot (fast hot water without waste): with the pump on, turn the Eco-hot valve to "Pre-heat"; after about 6 seconds the water is hot, then turn it back to "Normal."
+5. The exterior utility light switch (lights the dump/wash area) is on this panel too.
+**Tips:**
+- Turn the water pump OFF when you leave the van or drive.
+**Warnings:**
+- On city water, use an inline pressure regulator (50 psi max) to protect the plumbing.
+**Photos:**
+- photos/water-center-panel.jpg | Water Center (Nautilus) panel behind the passenger rear door
+
+## [Panels] L.P. Valve & Tank Heaters {#lp-tank} {icon:propane}
+**Quick:** Two rocker switches near the monitor panel (they light up when on): the L.P. (propane) valve and the holding-tank heaters.
+**Steps:**
+1. L.P. VALVE — turns the propane supply on/off for the cooktop and Truma heater. Turn it ON to cook or run propane heat; OFF when done and always while driving/refueling.
+2. HOLDING TANK HEATER — turns the heating pads on the fresh/gray/black tanks on/off. Use it ONLY in freezing weather to keep tanks and lines from freezing; turn it back off otherwise.
+**Warnings:**
+- The tank heaters draw a LOT of power — only run them while plugged into shore power or with the engine running. On battery alone they'll drain the house battery (won't last overnight).
+**Photos:**
+- photos/lp-switch.jpg | L.P. Valve and Holding Tank Heater rocker switches
 
 ## [Power] Battery System {#battery-system} {icon:bolt}
 **Quick:** The house runs on an AGM battery (it powers the 12V things: lights, water pump, fridge). An INVERTER makes 120V power, but ONLY for the TV, the sound bar, and the 2 outlets inside the cabinet above the TV. EVERYTHING else — all other outlets, the A/C, and the microwave — needs the GENERATOR running, the VEHICLE ENGINE running (while driving), or SHORE POWER.
@@ -80,20 +157,22 @@
 - The AGM battery recharges four ways: driving (engine alternator), running the generator, shore power, and the rooftop SOLAR PANELS on sunny days.
 - The fridge (12V), lights, water pump, and fans all sip from the battery even when parked — so recharge daily when boondocking.
 - If an inverter outlet has no power, the inverter's GFCI may have tripped — press the RESET button on the GFCI outlet, then try again.
+- Solar is automatic: the solar charge controller tops up the battery on sunny days (a green light means it's charging) — nothing to switch on.
 **Warnings:**
 - AGM batteries should not be run flat — recharge before the battery gets low (drive, generator, solar, or shore power).
 **Photos:**
 - photos/inverter-switch.jpg | The inverter switch (above the sliding door)
 - photos/oneplace-panel.jpg | OnePlace monitor — battery charge and tank levels
 - photos/tv-cabinet-outlet.jpg | The 2 inverter-powered outlets inside the cabinet above the TV
+- photos/solar-control.jpg | Solar charge controller
 
 ## [Power] Generator {#generator} {icon:generator}
-**Quick:** The under-floor Onan generator makes the 120V power that runs the A/C, the microwave, and ALL the regular outlets (the inverter only covers the TV, sound bar, and cabinet-above-TV outlet). Start/stop it from the generator switch. If it trips or won't start, use the RESET steps below.
+**Quick:** The under-floor Onan generator makes the 120V power that runs the A/C, the microwave, and ALL the regular outlets (the inverter only covers the TV, sound bar, and cabinet-above-TV outlet). Start/stop it with the GENSET buttons on the OnePlace panel. If it trips or won't start, use the RESET steps below.
 **Steps:**
 1. Before starting: turn OFF big 120V loads (A/C, microwave) so the generator starts under light load.
-2. Find the generator START/STOP switch (interior, near the monitor panel). Press and HOLD toward START until the generator fires, then release. It may crank a few seconds.
+2. On the OnePlace panel, press and HOLD the GENSET "Start" button until the generator fires, then release. It may crank a few seconds. (The "Meter" button shows generator info.)
 3. Let it warm up ~1–2 minutes before switching on the A/C or microwave.
-4. To stop: turn off A/C/microwave first, then hold the switch toward STOP.
+4. To stop: turn off A/C/microwave first, then press the GENSET "Stop" button.
 **Tips:**
 - The generator itself is in a compartment underneath the van. Never run it while sleeping without working CO detectors, and never in an enclosed space.
 - Keep at least 1/4 tank of fuel — the generator shares the van's gas tank and will stop to protect the engine's fuel supply.
@@ -165,11 +244,11 @@
 - photos/outdoor-shower.jpg | Exterior shower/wash station behind the rear passenger door
 
 ## [Water] Water Heater {#water-heater} {icon:flame}
-**Quick:** Gives you hot water. Make sure the water heater is FILLED with water before turning it on (never run it dry). Turn it on, wait ~20–30 min for hot water. Turn it off when you don't need hot water to save energy.
+**Quick:** Gives you hot water. Make sure the water heater is FILLED with water before turning it on (never run it dry). Turn it on with the OnePlace "Heater" button — Electric (uses shore/generator power) or L.P. (uses propane) — wait ~20–30 min. Turn it off when you don't need hot water.
 **Steps:**
 1. Make sure the water system is pressurized (pump on or city water connected) and the water heater is filled — open a hot faucet until water flows steadily, then close it.
 2. Confirm the Water Center panel is NOT in "bypass/winterize" (the red lever should be in the normal, not bypass, position).
-3. Turn the water heater ON.
+3. On the OnePlace panel, press "Heater Electric" (runs on 120V shore/generator) OR "Heater L.P." (runs on propane) to turn the water heater on.
 4. Wait about 20–30 minutes for the water to heat.
 5. Turn it OFF when you're done to conserve power/propane.
 **Warnings:**
@@ -179,10 +258,10 @@
 - photos/red-bypass-lever.jpg | Red bypass lever — normal (not bypass) position for use
 
 ## [Water] Toilet {#toilet} {icon:toilet}
-**Quick:** Flush with the foot/hand pedal — a little water first, then flush. OUR TRICK: use a biodegradable bowl liner for solids so we fill the black tank much slower and dump less often. Only RV-safe toilet paper. Nothing else goes in.
+**Quick:** Flush with the foot/hand pedal — a little water first, then flush. OUR TRICK: use a bowl liner for solids so we fill the black tank much slower and dump less often. Only RV-safe toilet paper. Nothing else goes in.
 **Steps:**
 1. For a normal flush: hold the flush lever/pedal — add a little water to the bowl first, do your business, then flush fully so waste clears into the black tank.
-2. OWNER'S BOWL-LINER TRICK (to save black tank space when boondocking): before use, drop a biodegradable RV toilet bowl liner bag into the bowl. After solids-only use, seal the bag and dispose in the trash instead of flushing — this keeps the black tank from filling quickly.
+2. OWNER'S BOWL-LINER TRICK (to save black tank space when boondocking): before use, drop an RV toilet bowl liner bag into the bowl. After solids-only use, seal the bag and dispose in the trash instead of flushing — this keeps the black tank from filling quickly.
 3. Add a little water and a scoop/pod of holding-tank treatment after dumping to control odor.
 **Tips:**
 - Keep a small stock of RV-safe toilet paper and bowl liners in the bathroom cabinet.
@@ -192,7 +271,7 @@
 - Do NOT pour bleach or harsh chemicals in the toilet — they damage the seals.
 **Photos:**
 - photos/toilet.jpg | The toilet and flush pedal
-- photos/bowl-liner.jpg | Biodegradable bowl liner in place
+- photos/bowl-liner.jpg | Bowl liner in place
 
 ## [Water] Gray/Black Tanks {#dumping} {icon:drop}
 **Quick:** When tanks are full (check the monitor panel), dump at a dump station. Connect the sewer hose, empty BLACK first, then GRAY (gray rinses the hose). Never leave valves open while parked. Wear the gloves in the wet-bay.
@@ -275,11 +354,11 @@
 - When it's really hot, run BOTH the dash A/C (engine) and the roof A/C to cool the van down faster.
 
 ## [Cooling & Heating] Heater (Hybrid) {#heater} {icon:heat}
-**Quick:** The heater is a hybrid (Truma) — it makes warm forced air AND hot water, and can run on PROPANE, on 120V ELECTRIC (shore/generator), or both ("Mix"). Use the round control panel near the monitor panel: set the room temperature and pick the energy source.
+**Quick:** The heater is a hybrid (Truma) — it makes warm forced air AND hot water, and can run on PROPANE, on 120V ELECTRIC (shore/generator), or both ("Mix"). Use the round Truma dial near the panels: turn the knob to set the temperature; on-screen a flame icon = gas heat, a plug icon = electric.
 **Steps:**
 1. For propane heat, make sure the LP (propane) switch above the side door is ON.
-2. On the heater's round control panel (near the monitor panel), press the rotary knob for ~3 seconds to turn it on.
-3. Turn the knob to set the room temperature. Use the menu to choose the energy mode: Gas (propane), Electric (needs shore/generator), or Mix.
+2. On the Truma dial (the round control with the flame/plug screen), press the knob for ~3 seconds to turn it on.
+3. Turn the knob to set the room temperature. Use the menu to choose the energy mode: Gas (flame icon = propane), Electric (plug icon = needs shore/generator), or Mix. The back-arrow button steps back a menu.
 4. The same system heats your hot water — set the hot water temperature in the menu too.
 **Tips:**
 - Gas (propane) mode works anywhere with no hookup. Electric mode needs shore power or the generator.
@@ -328,6 +407,27 @@
 - Auto-retract: releasing the parking brake with the awning out will make it close on its own, and so will high wind — keep hands and objects clear of the awning arms.
 **Photos:**
 - photos/awning-switch.jpg | Carefree Awning Control — LEFT = ON/OFF, RIGHT = RETRACT/EXTEND (light switch beside it)
+
+## [Gear] Supplies & Gear {#supplies} {icon:box}
+**Quick:** Extra gear and supplies are stocked in the van for you to use — here's what's onboard and roughly where to find it. Please tidy up and put things back when you're done.
+**Items:**
+- Lantern / flashlights — overhead cabinet
+- Camp chairs — rear storage
+- Folding table — rear storage
+- Tent — rear storage
+- Air mattress + pump — under-bed storage
+- Extra bedding, pillows, blankets — overhead bunk
+- Cups, plates, bowls, utensils — galley drawers
+- Pots, pans, kettle — galley cabinet
+- Basic cooking utensils, dish soap, sponge — galley
+- Beach / bath towels — closet
+- Leveling blocks + wheel chocks — rear compartment
+- Basic tool kit — under-seat storage
+- First-aid kit — near the entry
+**Tips:**
+- This list is a starting point — edit it in the content file to match exactly what's stocked.
+**Photos:**
+- photos/supplies.jpg | Where the extra gear is stored
 
 ## [Driving] Leveling {#leveling} {icon:level}
 **Quick:** Park on the flattest spot you can find. Use the leveling blocks under the tires for small slopes (drive up onto them). Set the parking brake, chock a wheel if on any incline. A level van means the fridge works well and you sleep better.
@@ -387,7 +487,7 @@
 - Take a photo and text the owner rather than guessing on anything you're unsure about.
 
 ## [Help] FAQ {#faq} {icon:checklist}
-**Quick:** Quick answers to the questions borrowers ask most (thanks to the Travato Owners community for many of these).
+**Quick:** Quick answers to the questions guests ask most (thanks to the Travato Owners community for many of these).
 **FAQ:**
 - Why does the OnePlace tank/battery gauge seem to drop fast? :: It reads the next level DOWN as soon as you use a little. Water/gray/black show Full, 2/3, 1/3, Empty; LP shows 3/4, 1/2, 1/4, E. So "3/4" really means "somewhere between 3/4 and full." It's normal.
 - What runs on the battery (DC) vs. needs generator/shore (AC)? :: On battery (DC): fridge, lights, TV, sound bar, ceiling/Max fans, water pump, and the OnePlace display. Needs 120V AC (generator, shore, or engine): the roof A/C and the microwave.

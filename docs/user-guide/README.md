@@ -1,6 +1,6 @@
-# Travato 59K — Borrower's Guide (PWA)
+# Travato 59K — How to Use Our Van (PWA)
 
-A mobile/tablet-friendly, installable web guide for friends & family who borrow our
+A mobile/tablet-friendly, installable web guide for anyone using our
 **2022 Winnebago Travato 59K**. Two reading modes (Quick Reference & Beginner),
 pictures, embedded videos, and full offline support once loaded.
 

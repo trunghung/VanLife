@@ -29,6 +29,7 @@
     awning: `<svg viewBox="0 0 24 24"><path ${P} d="M3 4h18v5H3z"/><path ${P} d="M3 9l2 4h14l2-4"/><path ${P} d="M5 13v7M19 13v7M9 13l-1 4M15 13l1 4"/></svg>`,
     cooktop: `<svg viewBox="0 0 24 24"><rect ${P} x="3" y="4" width="18" height="16" rx="2"/><circle ${P} cx="8.5" cy="9" r="2"/><circle ${P} cx="15.5" cy="9" r="2"/><circle ${P} cx="8.5" cy="15" r="2"/><circle ${P} cx="15.5" cy="15" r="2"/></svg>`,
     heat: `<svg viewBox="0 0 24 24"><path ${P} d="M8 4c-1 2 1 3 0 5M12 4c-1 2 1 3 0 5M16 4c-1 2 1 3 0 5"/><path ${P} d="M6 13h12a0 0 0 010 0v3a3 3 0 01-3 3H9a3 3 0 01-3-3z"/></svg>`,
+    box: `<svg viewBox="0 0 24 24"><path ${P} d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path ${P} d="M3 7l9 4 9-4M12 11v10"/></svg>`,
   };
   const icon = (name) => ICONS[name] || ICONS.home;
 
@@ -88,19 +89,17 @@
 
     const welcome = DATA.sections.find((s) => s.id === 'welcome');
 
+    const walkYt = DATA.walkthrough ? ytId(DATA.walkthrough) : null;
+
     let html = '<div class="fade-in">';
     html += `<div class="search-wrap"><input id="search" type="search" placeholder="Search (e.g. water, generator, TV)…" /></div>`;
     if (DATA.tagline) html += `<div class="intro-note">${esc(DATA.tagline)}</div>`;
-    // Featured intro / walkthrough video
-    if (DATA.walkthrough) {
-      const yt = ytId(DATA.walkthrough);
-      if (yt) {
-        html += `<div class="intro-video">
-          <div class="intro-video-label">▶ Start here — full video tour</div>
-          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/${yt.id}" title="Van walkthrough" allowfullscreen loading="lazy"></iframe></div>
-        </div>`;
-      }
+    // Link to the full video tour (the player itself is at the bottom of the page)
+    if (walkYt) {
+      html += `<button class="video-jump" onclick="document.getElementById('introVideo').scrollIntoView({behavior:'smooth',block:'start'})">▶ Watch the full video tour</button>`;
     }
+    // Welcome + Quick Reference as their own card group (same 10px gap as other cards)
+    html += '<div class="cards">';
     if (welcome) {
       html += `<button class="card" onclick="location.hash='#${welcome.id}'">
         <span class="ic">${icon(welcome.icon)}</span>
@@ -108,13 +107,13 @@
         <span class="c-quick">${esc(welcome.quick)}</span></span>
         <span class="chev">›</span></button>`;
     }
-    // Quick Reference cheat-sheet card
     html += `<button class="card" onclick="location.hash='#quick-reference'">
       <span class="ic">${icon('checklist')}</span>
       <span class="c-body"><span class="c-title">Quick Reference</span>
       <span class="c-quick">One-screen cheat sheet: the key thing to know about every system, at a glance.</span></span>
       <span class="chev">›</span></button>`;
-    html += '<div style="height:16px"></div>';
+    html += '</div>';
+    html += '<div style="height:20px"></div>';
 
     cats.forEach((c) => {
       html += `<div class="cat-group" data-cat="${esc(c)}"><div class="cat-title">${esc(c)}</div><div class="cards">`;
@@ -127,6 +126,15 @@
       });
       html += '</div></div>';
     });
+
+    // Full video tour at the bottom (jump link at top scrolls here)
+    if (walkYt) {
+      html += `<div class="intro-video" id="introVideo">
+        <div class="intro-video-label">▶ Full video tour</div>
+        <div class="video-wrap"><iframe src="https://www.youtube.com/embed/${walkYt.id}" title="Van walkthrough" allowfullscreen loading="lazy"></iframe></div>
+      </div>`;
+    }
+
     html += '</div>';
     view.innerHTML = html;
 
@@ -160,6 +168,12 @@
       html += `<div class="subhead">${esc(sub.title)}</div>`;
       html += renderBody(sub, s.id);
     });
+
+    // jump links
+    html += `<div class="detail-nav">
+      <a class="nav-link" href="#quick-reference"><span class="nav-ic">${icon('checklist')}</span> Quick Reference</a>
+      <a class="nav-link" href="#"><span class="nav-ic">${icon('home')}</span> All systems</a>
+    </div>`;
 
     html += '</div>';
     view.innerHTML = html;
@@ -284,6 +298,25 @@
       html += `</ul></div>`;
     }
 
+    if (s.items && s.items.length) {
+      html += `<div class="block"><ul class="items">`;
+      s.items.forEach((t) => { html += `<li>${richText(t, cid)}</li>`; });
+      html += `</ul></div>`;
+    }
+
+    // Panels: each row uses its photo as the icon (tap to enlarge)
+    if (s.panels && s.panels.length) {
+      html += `<div class="block"><ul class="panels">`;
+      s.panels.forEach((p) => {
+        const nm = esc(p.name);
+        html += `<li class="panel-item">
+          <button class="thumb panel-thumb" data-src="${esc(p.src)}" data-cap="${nm}" aria-label="Enlarge ${nm}"><img data-src="${esc(p.src)}" alt="${nm}" loading="lazy" /></button>
+          <div class="panel-text"><p class="panel-name">${nm}</p><p class="panel-desc">${richText(p.desc, cid)}</p></div>
+        </li>`;
+      });
+      html += `</ul></div>`;
+    }
+
     // FAQ: question/answer pairs
     if (s.faq && s.faq.length) {
       html += `<div class="block"><ul class="faq">`;
@@ -355,7 +388,10 @@
     'awning': 'awning', 'propane': 'propane',
     'inverter': 'battery-system', 'solar': 'battery-system',
     'generator': 'generator', 'toilet': 'toilet', 'heater': 'heater',
-    'leveling': 'leveling'
+    'leveling': 'leveling',
+    'oneplace': 'oneplace', 'power control system': 'power-control',
+    'water center': 'nautilus', 'nautilus': 'nautilus',
+    'tank heater': 'lp-tank', 'tank heaters': 'lp-tank', 'truma': 'heater'
   };
   const XREF_RE = (function () {
     const phrases = Object.keys(XREF_MAP)

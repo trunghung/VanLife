@@ -116,7 +116,7 @@
         "The water pump switch is also on the Water Center panel."
       ],
       "warnings": [],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=HBVgYQMUzBE",
       "photos": [
         {
           "src": "photos/oneplace-panel.jpg",
@@ -140,7 +140,7 @@
         "If a breaker still trips, run fewer big things at once — A/C plus microwave together is the usual culprit on a small hookup."
       ],
       "warnings": [],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=EptnH8Iup5M",
       "photos": [
         {
           "src": "photos/power-control-panel.jpg",
@@ -168,7 +168,7 @@
       "warnings": [
         "On city water, use an inline pressure regulator (50 psi max) to protect the plumbing."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=Bp4EjLOomps",
       "photos": [
         {
           "src": "photos/water-center-panel.jpg",
@@ -191,7 +191,7 @@
       "warnings": [
         "The tank heaters draw a LOT of power — only run them while plugged into shore power or with the engine running. On battery alone they'll drain the house battery (won't last overnight)."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=cfsC0rcsceM",
       "photos": [
         {
           "src": "photos/lp-switch.jpg",
@@ -263,7 +263,7 @@
       "warnings": [
         "Generator exhaust contains carbon monoxide, which is deadly. Keep windows/doors on the exhaust side closed and make sure the CO detector is working."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=eHY4qEPwThU",
       "photos": [],
       "subsections": [
         {
@@ -319,7 +319,7 @@
         "Use the proper heavy-duty cords/adapters from the compartment — don't use a light household extension cord for the main hookup, as undersized cords can overheat and cause a fire.",
         "Make sure all prongs are fully seated and dry before switching power on."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=GehI9x6-A0Q",
       "photos": [
         {
           "src": "photos/shore-inlet.jpg",
@@ -408,7 +408,7 @@
       "warnings": [
         "NEVER turn on the water heater when it's empty (in bypass or winterized mode) — it can be damaged."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=3zkkjxPeILQ",
       "photos": [
         {
           "src": "photos/water-heater-control.jpg",
@@ -440,7 +440,7 @@
         "Do NOT flush regular facial/household tissue, wipes (even \"flushable\"), sanitary products, or any non-dissolving items — they clog the tank.",
         "Do NOT pour bleach or harsh chemicals in the toilet — they damage the seals."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=qdWUWCTOXCc",
       "photos": [
         {
           "src": "photos/toilet.jpg",
@@ -474,7 +474,7 @@
       "warnings": [
         "Never open the gray valve before the black is drained and closed, or you'll back sewage into the gray side."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=rzceCBBa61k",
       "photos": [
         {
           "src": "photos/wet-bay.jpg",
@@ -503,7 +503,7 @@
         "Keep the door closed on hot days; open it as little as possible."
       ],
       "warnings": [],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=6l00zUeE2gU",
       "photos": [],
       "subsections": []
     },
@@ -546,7 +546,7 @@
         "Never use the cooktop to heat the van and never leave it unattended — risk of carbon monoxide/asphyxiation. Always ventilate while cooking.",
         "Turn the propane OFF while driving and when refueling (see Propane & Stove for safety)."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=M86mgBQ6i68",
       "photos": [
         {
           "src": "photos/cooktop.jpg",
@@ -580,7 +580,7 @@
         "The A/C will NOT run on the inverter/battery — if it won't start, you need the generator, shore power, or the engine running.",
         "If the GENERATOR is running but the A/C still won't start, the BREAKER on the generator unit (underneath the van) may be tripped — reset it (see the Generator card's RESET steps)."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=logr3SkuWks",
       "photos": [
         {
           "src": "photos/ac-thermostat.jpg",
@@ -627,7 +627,7 @@
       "warnings": [
         "When running propane heat overnight, keep a vent cracked and make sure the CO detector is working."
       ],
-      "video": "",
+      "video": "https://youtu.be/hN9cWFJSDb4",
       "photos": [
         {
           "src": "photos/heater-panel.jpg",
@@ -687,6 +687,34 @@
       "subsections": []
     },
     {
+      "id": "carplay",
+      "title": "Dash Radio & CarPlay",
+      "category": "Entertainment",
+      "icon": "steering",
+      "quick": "The dash touchscreen has Apple CarPlay and Android Auto built in (it's a JENSEN 7\" unit). Plug your phone into the dash USB port and CarPlay/Android Auto launches automatically — maps, music, and hands-free calls while you drive.",
+      "steps": [
+        "Turn the ignition to on/accessory so the dash radio powers up.",
+        "Apple CarPlay — plug your iPhone into the dash USB port with a good data cable, then tap \"Allow / Trust\" on the phone. (If your unit is set up for wireless, pick it from the radio's Bluetooth/CarPlay menu instead.)",
+        "Android Auto — plug your Android phone into the USB port and accept the on-screen prompts.",
+        "The screen switches to CarPlay / Android Auto — use maps, music, messages, and calls by touch or the steering-wheel voice button.",
+        "To go back to the radio, tap the Home / Source button on the screen."
+      ],
+      "tips": [
+        "Use a known-good USB DATA cable — charge-only cables won't connect.",
+        "Just want phone audio/calls? Pair the phone under the radio's Bluetooth menu — no CarPlay needed.",
+        "Steering-wheel buttons handle volume, track, and voice."
+      ],
+      "warnings": [],
+      "video": "",
+      "photos": [
+        {
+          "src": "photos/dash-radio.jpg",
+          "caption": "The 7\" dash touchscreen (Apple CarPlay / Android Auto)"
+        }
+      ],
+      "subsections": []
+    },
+    {
       "id": "awning",
       "title": "Awning",
       "category": "Comfort",
@@ -706,7 +734,7 @@
         "ALWAYS retract the awning before driving, and in strong wind, rain, or storms.",
         "Auto-retract: releasing the parking brake with the awning out will make it close on its own, and so will high wind — keep hands and objects clear of the awning arms."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=vSQDGVS3Wy8",
       "photos": [
         {
           "src": "photos/awning-switch.jpg",
@@ -811,7 +839,7 @@
         "If you smell propane (rotten-egg smell): do NOT touch light switches or create sparks. Open windows/doors, shut off the propane, exit the van, and don't return until it's clear.",
         "Keep the CO/propane detector powered — never disable it."
       ],
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=M86mgBQ6i68",
       "photos": [],
       "subsections": []
     },

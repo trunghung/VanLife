@@ -97,6 +97,7 @@
 - If it will be below freezing in storage, drain the water system or winterize it so the pipes don't burst.
 
 ## [Panels] OnePlace Monitor {#oneplace} {icon:battery}
+**Video:** https://www.youtube.com/watch?v=HBVgYQMUzBE
 **Quick:** The van's status panel, above the sliding door. Press a button to read tank levels or battery, run the water pump, start/stop the generator, or turn the water heater on.
 **Steps:**
 1. LEVELS → press "Tank" to see fresh / gray / black on the screen (shown as 1/3, 2/3, Full — there's usually a little more than it reads). Press "Battery" for the house + chassis charge.
@@ -109,6 +110,7 @@
 - photos/oneplace-panel.jpg | OnePlace monitor — GenSet, Water, and Levels buttons
 
 ## [Panels] Power Control System {#power-control} {icon:bolt}
+**Video:** https://www.youtube.com/watch?v=EptnH8Iup5M
 **Quick:** An automatic power-load manager. It spreads the van's electrical load so running several things at once doesn't trip the breaker. You normally don't touch it.
 **Steps:**
 1. Leave it on / automatic — it works by itself on shore power (15 / 20 / 30-amp) or the generator.
@@ -120,6 +122,7 @@
 - photos/power-control-panel.jpg | Power Control System — green LCD with SELECT / SCROLL
 
 ## [Panels] Water Center (Nautilus) {#nautilus} {icon:water}
+**Video:** https://www.youtube.com/watch?v=Bp4EjLOomps
 **Quick:** The plumbing control panel, behind the passenger rear door. Labeled levers set how water flows; it also has the water pump switch, the Eco-hot valve, and the exterior light switch.
 **Steps:**
 1. Set the LEVERS to match the picture labels on the panel: "Dry Camping" for normal onboard-tank use, "City Water" when hooked to a spigot, "Power Fill Tank" to fill the fresh tank, "Winterize" for storage.
@@ -135,6 +138,7 @@
 - photos/water-center-panel.jpg | Water Center (Nautilus) panel behind the passenger rear door
 
 ## [Panels] L.P. Valve & Tank Heaters {#lp-tank} {icon:propane}
+**Video:** https://www.youtube.com/watch?v=cfsC0rcsceM
 **Quick:** Two rocker switches near the monitor panel (they light up when on): the L.P. (propane) valve and the holding-tank heaters.
 **Steps:**
 1. L.P. VALVE — turns the propane supply on/off for the cooktop and Truma heater. Turn it ON to cook or run propane heat; OFF when done and always while driving/refueling.
@@ -167,6 +171,7 @@
 - photos/solar-control.jpg | Solar charge controller
 
 ## [Power] Generator {#generator} {icon:generator}
+**Video:** https://www.youtube.com/watch?v=eHY4qEPwThU
 **Quick:** The under-floor Onan generator makes the 120V power that runs the A/C, the microwave, and ALL the regular outlets (the inverter only covers the TV, sound bar, and cabinet-above-TV outlet). Start/stop it with the GENSET buttons on the OnePlace panel. If it trips or won't start, use the RESET steps below.
 **Steps:**
 1. Before starting: turn OFF big 120V loads (A/C, microwave) so the generator starts under light load.
@@ -195,6 +200,7 @@
 - photos/generator-switch.jpg | Interior START/STOP switch
 
 ## [Power] Plugging In {#shore-power} {icon:plug}
+**Video:** https://www.youtube.com/watch?v=GehI9x6-A0Q
 **Quick:** "Shore power" means plugging the van into a campground outlet (30-amp). This runs EVERYTHING (including A/C and microwave) AND recharges the battery. Turn the campground breaker OFF before plugging/unplugging. Power extension cords and outlet adapters are stored in the rear compartment (open the passenger back door — above and beside the water inlets, same place as the water hoses).
 **Steps:**
 1. Open the PASSENGER BACK DOOR. In the rear compartment above/beside the water tank inlets you'll find the shore cord, power EXTENSION CORDS, OUTLET ADAPTERS, and the water hoses.
@@ -244,6 +250,7 @@
 - photos/outdoor-shower.jpg | Exterior shower/wash station behind the rear passenger door
 
 ## [Water] Water Heater {#water-heater} {icon:flame}
+**Video:** https://www.youtube.com/watch?v=3zkkjxPeILQ
 **Quick:** Gives you hot water. Make sure the water heater is FILLED with water before turning it on (never run it dry). Turn it on with the OnePlace "Heater" button — Electric (uses shore/generator power) or L.P. (uses propane) — wait ~20–30 min. Turn it off when you don't need hot water.
 **Steps:**
 1. Make sure the water system is pressurized (pump on or city water connected) and the water heater is filled — open a hot faucet until water flows steadily, then close it.
@@ -258,6 +265,7 @@
 - photos/red-bypass-lever.jpg | Red bypass lever — normal (not bypass) position for use
 
 ## [Water] Toilet {#toilet} {icon:toilet}
+**Video:** https://www.youtube.com/watch?v=qdWUWCTOXCc
 **Quick:** Flush with the foot/hand pedal — a little water first, then flush. OUR TRICK: use a bowl liner for solids so we fill the black tank much slower and dump less often. Only RV-safe toilet paper. Nothing else goes in.
 **Steps:**
 1. For a normal flush: hold the flush lever/pedal — add a little water to the bowl first, do your business, then flush fully so waste clears into the black tank.
@@ -274,6 +282,7 @@
 - photos/bowl-liner.jpg | Bowl liner in place
 
 ## [Water] Gray/Black Tanks {#dumping} {icon:drop}
+**Video:** https://www.youtube.com/watch?v=rzceCBBa61k
 **Quick:** When tanks are full (check the monitor panel), dump at a dump station. Connect the sewer hose, empty BLACK first, then GRAY (gray rinses the hose). Never leave valves open while parked. Wear the gloves in the wet-bay.
 **Steps:**
 1. Check tank levels on the OnePlace monitor panel before dumping.
@@ -292,6 +301,7 @@
 - photos/dump-valves.jpg | Black (left) and gray valve pulls
 
 ## [Appliances] Refrigerator {#fridge} {icon:fridge}
+**Video:** https://www.youtube.com/watch?v=6l00zUeE2gU
 **Quick:** The fridge runs automatically on 12V from the house battery (no generator needed). Turn it on and set the dial around 3–4. Give it a few hours to cool before loading lots of food. Leave it on the whole trip.
 **Steps:**
 1. Turn the fridge power ON and set the thermostat to about 3–4 (midrange).
@@ -312,6 +322,7 @@
 - On a small household (15/20-amp) hookup, don't run the microwave and A/C together — it will trip the breaker.
 
 ## [Appliances] Cooktop {#cooktop} {icon:cooktop}
+**Video:** https://www.youtube.com/watch?v=M86mgBQ6i68
 **Quick:** The cooktop is PROPANE. Turn the PROPANE on first — the LP switch is above the side door — then light a burner. No generator or shore power needed. Turn the burners AND the propane OFF when done, and always ventilate.
 **Steps:**
 1. Turn ON the LP (propane) switch above the side door.
@@ -328,6 +339,7 @@
 - photos/lp-switch.jpg | LP (propane) switch above the side door
 
 ## [Cooling & Heating] Roof A/C {#roof-ac} {icon:snowflake}
+**Video:** https://www.youtube.com/watch?v=logr3SkuWks
 **Quick:** The roof A/C is the main way to cool a parked van. It needs REAL 120V power: the GENERATOR running, SHORE POWER, or the VEHICLE ENGINE running (while driving). It will NOT run on the inverter/battery. Select Low Cool / High Cool / Auto and set the temperature. There's also a Bluetooth app to control it.
 **Steps:**
 1. Get 120V power first: start the generator (see Generator card), plug into shore power, or run the engine. The A/C does NOT work on the inverter.
@@ -354,6 +366,7 @@
 - When it's really hot, run BOTH the dash A/C (engine) and the roof A/C to cool the van down faster.
 
 ## [Cooling & Heating] Heater (Hybrid) {#heater} {icon:heat}
+**Video:** https://youtu.be/hN9cWFJSDb4
 **Quick:** The heater is a hybrid (Truma) — it makes warm forced air AND hot water, and can run on PROPANE, on 120V ELECTRIC (shore/generator), or both ("Mix"). Use the round Truma dial near the panels: turn the knob to set the temperature; on-screen a flame icon = gas heat, a plug icon = electric.
 **Steps:**
 1. For propane heat, make sure the LP (propane) switch above the side door is ON.
@@ -392,7 +405,23 @@
 **Photos:**
 - photos/tv.jpg | TV and remote
 
+## [Entertainment] Dash Radio & CarPlay {#carplay} {icon:steering}
+**Quick:** The dash touchscreen has Apple CarPlay and Android Auto built in (it's a JENSEN 7" unit). Plug your phone into the dash USB port and CarPlay/Android Auto launches automatically — maps, music, and hands-free calls while you drive.
+**Steps:**
+1. Turn the ignition to on/accessory so the dash radio powers up.
+2. Apple CarPlay — plug your iPhone into the dash USB port with a good data cable, then tap "Allow / Trust" on the phone. (If your unit is set up for wireless, pick it from the radio's Bluetooth/CarPlay menu instead.)
+3. Android Auto — plug your Android phone into the USB port and accept the on-screen prompts.
+4. The screen switches to CarPlay / Android Auto — use maps, music, messages, and calls by touch or the steering-wheel voice button.
+5. To go back to the radio, tap the Home / Source button on the screen.
+**Tips:**
+- Use a known-good USB DATA cable — charge-only cables won't connect.
+- Just want phone audio/calls? Pair the phone under the radio's Bluetooth menu — no CarPlay needed.
+- Steering-wheel buttons handle volume, track, and voice.
+**Photos:**
+- photos/dash-radio.jpg | The 7" dash touchscreen (Apple CarPlay / Android Auto)
+
 ## [Comfort] Awning {#awning} {icon:awning}
+**Video:** https://www.youtube.com/watch?v=vSQDGVS3Wy8
 **Quick:** The Carefree awning control has two rockers: LEFT = ON/OFF, RIGHT = RETRACT/EXTEND. Two rules: (1) the LEFT switch must be ON before extend/retract will work, and (2) the PARKING BRAKE must be ON. Safety features: if you release the parking brake while the awning is out, OR if the wind gets too strong, the awning retracts itself automatically. There's an awning LIGHT switch right next to it.
 **Steps:**
 1. Set the PARKING BRAKE — the awning will not operate without it.
@@ -452,6 +481,7 @@
 - photos/predrive-checklist.jpg | Pre-drive walk-around checklist
 
 ## [Safety] Propane & Stove {#propane} {icon:propane}
+**Video:** https://www.youtube.com/watch?v=M86mgBQ6i68
 **Quick:** Propane powers the stove (and furnace). Turn the propane valve on to cook, off when done and when driving/refueling. If you ever smell gas: no flames, no switches — open windows, turn off propane, and get everyone out.
 **Steps:**
 1. To cook: make sure the propane supply valve is ON, light the burner per the stove instructions.
